@@ -37,7 +37,7 @@ Peter D. Hoff, Adrian E. Raftery and Mark S. Handcock. Latent space approaches t
 # Type demo(LLN) for a complete demonstration
 data(Monks)
 pos <- latpos(Monks$Y,p=2)
-plot(x=pos$Z,prms=pos,cls=Monks$cls)
+plot(pos,cls=Monks$cls)
 }
 
 \keyword{ methods }

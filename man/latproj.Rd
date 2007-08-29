@@ -39,7 +39,7 @@ data(Monks)
 learn <- seq(1,17); test <- c(18)
 pos <- latpos(Monks$Y[learn,learn],p=2)
 proj <- latproj(pos,Monks$Y,test)
-plot(x=proj$Z,prms=proj,cls=Monks$cls)
+plot(proj,cls=Monks$cls)
 }
 
 \keyword{methods}

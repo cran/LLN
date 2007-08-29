@@ -22,7 +22,7 @@ Monks$cls: the class membership of each node: 1 corresponds to the \emph{loyal o
 \examples{
 data(Monks)
 pos <- latpos(Monks$Y,p=2)
-plot(x=pos$Z,prms=pos,cls=Monks$cls)
+plot(pos,cls=Monks$cls)
 }
 
 \keyword{datasets}

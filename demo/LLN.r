@@ -52,20 +52,20 @@ split.screen(figs = c(2,2))
 
 # Plot the network in the learned latent space
 screen(1)
-plot(x=pos$Z,prms=pos,cls=cls[learn])
+plot(pos,cls=cls[learn])
 title(main='Learned latent space',cex.main = 1)
 
 # Plot the network and the supervised classifier
 screen(2)
-plot(x=pos$Z,prms=pos,cls=cls[learn],classifier=c)
+plot(pos,cls=cls[learn],classifier=c)
 title(main='Learned classifier',cex.main = 1)
 
 # Project the new nodes in the latent space
 screen(3)
-plot(x=proj$Z,prms=proj,cls=cls,classifier=c,unlab=TRUE)
+plot(proj,cls=cls,classifier=c,unlab=TRUE)
 title(main='Projection of the new nodes',cex.main = 1)
 
 # Final classification of the new nodes
 screen(4)
-plot(x=proj$Z,prms=proj,cls=cls,classifier=c,unlab=FALSE)
+plot(proj,cls=cls,classifier=c,unlab=FALSE)
 title(main='Classification of the new nodes',cex.main = 1)
